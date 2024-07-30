@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: etornay- <etornay-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/22 13:51:35 by etornay-          #+#    #+#             */
-/*   Updated: 2024/07/30 15:58:18 by etornay-         ###   ########.fr       */
+/*   Created: 2024/07/27 19:05:04 by etornay-          #+#    #+#             */
+/*   Updated: 2024/07/30 15:54:02 by etornay-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ ClapTrap &ClapTrap::operator = (const ClapTrap &other)
 
 ClapTrap::~ClapTrap(void)
 {
-	std::cout << std::endl << "ClapTrap: Destructor called" << std::endl;
+	std::cout << "ClapTrap: Destructor called" << std::endl;
 }
 
 void ClapTrap::attack(const std::string& target)
@@ -80,9 +80,8 @@ void ClapTrap::takeDamage(unsigned int amount)
 		}
 	}
 	else
-		std::cout << std::endl << "ClapTrap " << name << " is dead." << std::endl;
+	std::cout << std::endl << "ClapTrap " << name << " is dead." << std::endl;
 }
-
 void ClapTrap::beRepaired(unsigned int amount)
 {
 	if (hitPoints > 0 && energyPoints > 0)
