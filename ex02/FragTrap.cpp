@@ -6,7 +6,7 @@
 /*   By: etornay- <etornay-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/30 14:22:19 by etornay-          #+#    #+#             */
-/*   Updated: 2024/07/30 15:57:05 by etornay-         ###   ########.fr       */
+/*   Updated: 2024/07/30 16:01:10 by etornay-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,7 @@ void FragTrap::highFiveGuys(void)
 {
 	if (hitPoints > 0 && energyPoints > 0)
 	{
-		std::cout << std::endl << "FragTrap " << name << " wants to high five with everyone!" << std::endl;
+		std::cout << std::endl << "FragTrap " << name << " wants to high five with everyone! :D" << std::endl;
 		energyPoints--;
 		std::cout << "· Hit points left: " << hitPoints << std::endl;
 		std::cout << "· Energy points left: " << energyPoints << std::endl;
@@ -77,5 +77,5 @@ void FragTrap::highFiveGuys(void)
 	else if (hitPoints <= 0)
 		std::cout << std::endl << "FragTrap " << name << " is dead." << std::endl;
 	else if (energyPoints <= 0)
-		std::cout << std::endl << "FragTrap " << name << " has no energy to high five. :C" << std::endl;
+		std::cout << std::endl << "FragTrap " << name << " has no energy to high five... :C" << std::endl;
 }
